@@ -2,4 +2,71 @@ tags:
 - readme
 languages:
 - undefined
-    
+    Identify equality operators
+JavaScript includes four equality operators:
+
+strict equality operator (===)
+strict inequality operator (!==)
+loose equality operator (==)
+loose inequality operator (!=)
+These operators allow us to compare values and determine whether they are the same.
+
+42 === 42;
+// => true
+
+42 === "42";
+// => false
+
+true === 1;
+// => false
+
+"0" === false;
+// => false
+
+null === undefined;
+// => false
+
+" " === 0;
+// => false
+
+
+strict inequality operator
+
+9000 !== 9001
+// => true
+
+9001 !== '9001'
+// => true
+
+[] !== ''
+// => true
+
+You should prefer === and !== for comparisons.
+
+JavaScript includes four relational operators:
+
+greater than (>)
+greater than or equals (>=)
+less than (<)
+less than or equals (<=)
+88 > 9;
+// => true
+
+88 >= 88;
+// => true
+
+88 < 9;
+// => false
+
+
+88 >= "hello";
+// => false
+
+88 <= "hello";
+// => false
+
+ The following returns false because the Unicode value of 8, the first character in 88, is less than the Unicode value of 9.
+
+"88" > "9";
+// => false
+
